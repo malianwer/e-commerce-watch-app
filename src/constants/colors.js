@@ -7,4 +7,7 @@ export const colors = {
   yellow: '#FFD33C',
   lavendar: '#F3ECFF',
   lightGray: '#F3F3F3',
+  primary: '#45484A',
+  secondary: '#AEB5BB',
+  white: '#FFFFFF',
 };

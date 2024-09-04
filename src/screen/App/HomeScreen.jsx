@@ -1,14 +1,14 @@
 /* eslint-disable react-native/no-inline-styles */
 import {FlatList, Image, StyleSheet, Text, TextInput, View} from 'react-native';
 import React, {useState} from 'react';
-import {fontSize, iconSize, spacing} from '../constants/dimensions';
-import {colors} from '../constants/colors';
-import {fontFamily} from '../constants/fonts';
-import Category from '../components/Category';
-import ProductCard from '../components/ProductCard';
+import {fontSize, iconSize, spacing} from '../../constants/dimensions';
+import {colors} from '../../constants/colors';
+import {fontFamily} from '../../constants/fonts';
+import Category from '../../components/Category';
+import ProductCard from '../../components/ProductCard';
 
-import {smartWatch} from '../data/smartwatch';
-import {headphones} from '../data/headphones';
+import {smartWatch} from '../../data/smartwatch';
+import {headphones} from '../../data/headphones';
 
 const HomeScreen = () => {
   const [data, setData] = useState(smartWatch);
@@ -24,8 +24,6 @@ const HomeScreen = () => {
   const samsungWatches = filterByBrand(smartWatch, 'Samsung');
   const xiaomiWatches = filterByBrand(smartWatch, 'Xiaomi');
   const huaweiWatches = filterByBrand(smartWatch, 'Huawei');
-
-  console.log(samsungWatches);
 
   const handleUpdateCategory = newCategory => {
     if (newCategory === 'Smart Watch') {
@@ -57,7 +55,7 @@ const HomeScreen = () => {
               <View style={styles.inputWrapper}>
                 {/* icon */}
                 <Image
-                  source={require('../assets/search.png')}
+                  source={require('../../assets/search.png')}
                   style={styles.logo}
                 />
                 <TextInput
@@ -69,7 +67,7 @@ const HomeScreen = () => {
               {/* category container */}
               <View style={styles.categoryContainer}>
                 <Image
-                  source={require('../assets/category.png')}
+                  source={require('../../assets/category.png')}
                   style={styles.logo}
                 />
               </View>

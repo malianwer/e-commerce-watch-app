@@ -13,15 +13,15 @@ import {useRoute} from '@react-navigation/native';
 
 // icons
 
-import {fontSize, iconSize, spacing} from '../constants/dimensions';
-import Header from '../components/Header';
-import ProductCarousel from '../components/ProductCarousel';
-import {colors} from '../constants/colors';
+import {fontSize, iconSize, spacing} from '../../constants/dimensions';
+import ProductCarousel from '../../components/ProductCarousel';
+import {colors} from '../../constants/colors';
 
 // icon
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import {fontFamily} from '../constants/fonts';
-import CartButton from '../components/CartButton';
+import {fontFamily} from '../../constants/fonts';
+import CartButton from '../../components/CartButton';
+import Header from '../../components/Header';
 
 const colorsData = [
   {
