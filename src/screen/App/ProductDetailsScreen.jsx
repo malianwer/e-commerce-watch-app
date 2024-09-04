@@ -20,7 +20,7 @@ import {colors} from '../../constants/colors';
 // icon
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import {fontFamily} from '../../constants/fonts';
-import CartButton from '../../components/CartButton';
+import Button from '../../components/Button';
 import Header from '../../components/Header';
 
 const colorsData = [
@@ -139,7 +139,11 @@ const ProductDetailsScreen = () => {
         </Text>
       </ScrollView>
       {/*add to cart button  */}
-      <CartButton title={'Add to Cart | $349.99'} onPress={() => {}} />
+      <Button
+        title={'Add to Cart | $349.99'}
+        onPress={() => {}}
+        showIcon={true}
+      />
     </View>
   );
 };

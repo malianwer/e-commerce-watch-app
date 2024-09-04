@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import {
   Image,
   StyleSheet,
@@ -13,6 +14,7 @@ import {fontFamily} from '../../constants/fonts';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import {useNavigation} from '@react-navigation/native';
+import Button from '../../components/Button';
 
 const LoginScreen = () => {
   const navigation = useNavigation();
@@ -68,13 +70,13 @@ const LoginScreen = () => {
         <TouchableOpacity>
           <Text style={styles.forgotPasswordText}>Forgot Password?</Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.loginButtonWrapper}
+        <Button
+          title={'Login'}
           onPress={() => {
             navigation.navigate('HOME');
-          }}>
-          <Text style={styles.loginText}>Login</Text>
-        </TouchableOpacity>
+          }}
+          widthStyle={{width: '100%'}}
+        />
         <Text style={styles.continueText}>or continue with</Text>
         <TouchableOpacity style={styles.googleButtonContainer}>
           <Image
@@ -124,7 +126,7 @@ const styles = StyleSheet.create({
   inputContainer: {
     borderWidth: 1,
     borderColor: colors.secondary,
-    borderRadius: 100,
+    borderRadius: 20,
     paddingHorizontal: 20,
     flexDirection: 'row',
     alignItems: 'center',
@@ -165,7 +167,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     borderWidth: 2,
     borderColor: colors.primary,
-    borderRadius: 100,
+    borderRadius: 20,
     justifyContent: 'center',
     alignItems: 'center',
     padding: 10,

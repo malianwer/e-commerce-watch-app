@@ -14,7 +14,7 @@ import slides from './slides';
 import Paginator from './Paginator';
 import {fontFamily} from '../../../constants/fonts';
 import {colors} from '../../../constants/colors';
-import CartButton from '../../../components/CartButton';
+import Button from '../../../components/Button';
 import Screen from '../../../components/Screen';
 import {useNavigation} from '@react-navigation/native';
 
@@ -55,7 +55,7 @@ function OnBoardingScreen() {
         />
         <Paginator data={slides} scrollX={scrollX} />
       </View>
-      <CartButton title="Login" onPress={() => navigation.navigate('LOGIN')} />
+      <Button title="Login" onPress={() => navigation.navigate('LOGIN')} />
 
       <View style={styles.footerContainer}>
         <Text style={styles.accountText}>Don’t have an account?</Text>
