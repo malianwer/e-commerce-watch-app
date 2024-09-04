@@ -139,7 +139,7 @@ const ProductDetailsScreen = () => {
         </Text>
       </ScrollView>
       {/*add to cart button  */}
-      <CartButton />
+      <CartButton title={'Add to Cart | $349.99'} onPress={() => {}} />
     </View>
   );
 };

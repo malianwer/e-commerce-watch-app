@@ -7,9 +7,9 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import {colors} from '../constants/colors';
 import {fontSize, iconSize, spacing} from '../constants/dimensions';
 import {fontFamily} from '../constants/fonts';
-const CartButton = () => {
+const CartButton = ({onPress, title}) => {
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={onPress}>
       <LinearGradient
         colors={[colors.gray, colors.black]}
         start={{
@@ -26,7 +26,7 @@ const CartButton = () => {
           color={colors.background}
           size={iconSize.md}
         />
-        <Text style={styles.addToCartText}>Add to Cart | $349.99</Text>
+        <Text style={styles.addToCartText}>{title}</Text>
       </LinearGradient>
     </TouchableOpacity>
   );
