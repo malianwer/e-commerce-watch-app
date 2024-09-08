@@ -6,7 +6,7 @@ import ProductDetailsScreen from './src/screen/App/ProductDetailsScreen';
 import HomeScreen from './src/screen/App/HomeScreen';
 import LoginScreen from './src/screen/Auth/LoginScreen';
 import SignupScreen from './src/screen/Auth/SignupScreen';
-import OnBoardingScreen from './src/screen/Auth/onBoardScreen';
+import onBoardingScreen from './src/screen/Auth/onBoardingScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,7 +17,9 @@ const App = () => {
         screenOptions={{
           headerShown: false,
         }}>
-        <Stack.Screen name={'ONBOARDING'} component={OnBoardingScreen} />
+        <Stack.Screen name={'ONBOARDINGSCREEN'} component={onBoardingScreen} />
+
+        {/* <Stack.Screen name={'ONBOARDING'} component={OnBoardingScreen} /> */}
         <Stack.Screen name={'LOGIN'} component={LoginScreen} />
         <Stack.Screen name="SIGNUP" component={SignupScreen} />
         <Stack.Screen name={'HOME'} component={HomeScreen} />
